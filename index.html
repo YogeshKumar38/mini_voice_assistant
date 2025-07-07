@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎙AI Voice Assistant</h1>
+        <p class="subheading">Talk to your system or type a command</p>
+
+        <div class="main-panel">
+            <div class="robot-panel">
+                <img src="/static/robot.png" alt="Robot">
+            </div>
+            <div class="chat-panel">
+                <div id="chat-box" class="chat-box"></div>
+                <input type="text" id="manual-input" placeholder="Type your command..." />
+                <button onclick="sendManualCommand()" class="manual-btn">Send</button>
+                <button onclick="getCommand()" class="listen-btn">🎤 Give Command</button>
+                <input type="file" id="fileInput" />
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
